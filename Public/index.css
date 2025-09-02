@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* GLOBAL CLASSES */
+.normalText { 
+    @apply text-green-700 text-7xl;
+}
+/*  */ 
