@@ -1,7 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 @import "tailwindcss";
 
+@theme {
+    --font-jersey10: "Jersey 10", sans-serif;
+}
+
 /* GLOBAL CLASSES */
-.normalText { 
-    @apply text-green-700 text-7xl;
+/* Body */
+body {
+    @apply bg-[#070709];
+}
+
+/* Navigation Buttons */
+nav {
+    @apply static top-0;
+}
+.navDiv {
+    @apply grid grid-flow-col justify-end;
+}
+.homePageB {
+    @apply text-[#5865F2] text-3xl font-jersey10;
+}
+.eventsPageB {
+    @apply text-[#5865F2] text-3xl font-jersey10;
 }
 /*  */ 
