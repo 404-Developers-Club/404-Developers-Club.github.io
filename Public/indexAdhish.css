@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
 @import "tailwindcss";
 
-@import "./indexAdhish.css";
-@import "./indexAntonie.css";
-@import "./indexJohn.css";
+@theme {
+    /* Nav Button Font */
+    --font-jersey10: "Jersey 10", sans-serif;
+}

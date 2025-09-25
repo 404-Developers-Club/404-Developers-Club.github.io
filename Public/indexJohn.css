@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import "tailwindcss";
+
+@theme {
+    /* Nav Button Font */
+    --font-jersey10: "Jersey 10", sans-serif;
+}
+
