@@ -21,14 +21,15 @@ body {
 
 /* Navigation Buttons */
 nav {
-    @apply top-0 w-full shadow-md;
+    @apply top-0 w-full shadow-md right-2;
 }
 .navDiv {
-    @apply flex flex-wrap justify-end items-center gap-12 p-2 bg-gray-500;
-    @apply text-[white] text-sm sm:text-2xl md:text-2xl font-oxanium;
+    @apply flex flex-wrap justify-end items-center gap-12 p-2 pr-5 bg-gray-500;
+    @apply text-[white] sm:text-base md:text-xl lg:text-2xl font-oxanium ;
 
 }
 .homePageB {
+    @apply hover:text-[#43ff88] text-shadow-green-300;
 }
 .eventsPageB {
 }
