@@ -24,19 +24,23 @@ nav {
     @apply top-0 w-full shadow-md right-2;
 }
 .navDiv {
-    @apply flex flex-wrap justify-end items-center gap-12 p-2 pr-5 bg-gray-500;
-    @apply text-[white] sm:text-base md:text-xl lg:text-2xl font-oxanium ;
+    @apply flex flex-wrap justify-end items-center gap-12 p-2 pr-5;
+    @apply text-[white] sm:text-base md:text-lg lg:text-xl font-oxanium ;
 
 }
 .homePageB {
-    @apply hover:text-[#43ff88] text-shadow-green-300;
+    @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
 }
 .eventsPageB {
+    @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
 }
 .lessonsPageB {
+    @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
 }
 .projectsPageB {
+    @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
 }
 .socialsPageB {
+    @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
 }
 /*  */
