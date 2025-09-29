@@ -21,7 +21,7 @@ body {
 
 /* Navigation Buttons */
 nav {
-    @apply top-0 w-full shadow-md right-2;
+    @apply top-0 w-full shadow-md right-2 ;
 }
 .navDiv {
     @apply flex flex-wrap justify-end items-center gap-12 p-2 pr-5;
@@ -30,17 +30,22 @@ nav {
 }
 .homePageB {
     @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
+    @apply active:text-gray-400
 }
 .eventsPageB {
     @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
+    @apply active:text-gray-400
 }
 .lessonsPageB {
     @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
+    @apply active:text-gray-400
 }
 .projectsPageB {
     @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
+    @apply active:text-gray-400
 }
 .socialsPageB {
     @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
+    @apply active:text-gray-400
 }
 /*  */

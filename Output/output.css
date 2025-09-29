@@ -11,6 +11,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-green-400: oklch(79.2% 0.209 151.711);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --spacing: 0.25rem;
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
@@ -566,6 +567,9 @@ nav {
       }
     }
   }
+  &:active {
+    color: var(--color-gray-400);
+  }
 }
 .eventsPageB {
   &::after {
@@ -612,6 +616,9 @@ nav {
         scale: var(--tw-scale-x) var(--tw-scale-y);
       }
     }
+  }
+  &:active {
+    color: var(--color-gray-400);
   }
 }
 .lessonsPageB {
@@ -660,6 +667,9 @@ nav {
       }
     }
   }
+  &:active {
+    color: var(--color-gray-400);
+  }
 }
 .projectsPageB {
   &::after {
@@ -707,6 +717,9 @@ nav {
       }
     }
   }
+  &:active {
+    color: var(--color-gray-400);
+  }
 }
 .socialsPageB {
   &::after {
@@ -753,6 +766,9 @@ nav {
         scale: var(--tw-scale-x) var(--tw-scale-y);
       }
     }
+  }
+  &:active {
+    color: var(--color-gray-400);
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
