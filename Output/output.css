@@ -19,6 +19,8 @@
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -494,18 +496,14 @@ body {
 nav {
   top: calc(var(--spacing) * 0);
   right: calc(var(--spacing) * 2);
+  display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: calc(var(--spacing) * 6);
+  padding-block: calc(var(--spacing) * 4);
   --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-}
-.navDiv {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-  gap: calc(var(--spacing) * 12);
-  padding: calc(var(--spacing) * 2);
-  padding-right: calc(var(--spacing) * 5);
   font-family: var(--font-oxanium);
   color: white;
   @media (width >= 40rem) {
@@ -520,6 +518,10 @@ nav {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+}
+.navDiv {
+  display: flex;
+  gap: calc(var(--spacing) * 6);
 }
 .homePageB {
   &::after {
@@ -770,6 +772,28 @@ nav {
   &:active {
     color: var(--color-gray-400);
   }
+}
+.lowerBodyIndex {
+  display: flex;
+  height: calc(3/4 * 100%);
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.homePhotoUno {
+  height: calc(2/5 * 100%);
+  width: calc(1/5 * 100%);
+  border-radius: var(--radius-lg);
+}
+.homePhotoDos {
+  height: calc(2/5 * 100%);
+  width: calc(1/5 * 100%);
+  border-radius: var(--radius-lg);
+}
+.interactiveLaptop {
+  height: calc(3/5 * 100%);
+  width: calc(1/2 * 100%);
+  border-radius: var(--radius-md);
 }
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 @layer theme, base, components, utilities;

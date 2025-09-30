@@ -21,31 +21,45 @@ body {
 
 /* Navigation Buttons */
 nav {
-    @apply top-0 w-full shadow-md right-2 ;
+    @apply flex justify-between items-center px-6 py-4 top-0 w-full shadow-md right-2;
+    @apply text-[white] sm:text-base md:text-lg lg:text-xl font-oxanium;
 }
 .navDiv {
-    @apply flex flex-wrap justify-end items-center gap-12 p-2 pr-5;
-    @apply text-[white] sm:text-base md:text-lg lg:text-xl font-oxanium ;
-
+    @apply flex gap-6;
 }
 .homePageB {
     @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
-    @apply active:text-gray-400
+    @apply active:text-gray-400;
 }
 .eventsPageB {
     @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
-    @apply active:text-gray-400
+    @apply active:text-gray-400;
 }
 .lessonsPageB {
     @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
-    @apply active:text-gray-400
+    @apply active:text-gray-400;
 }
 .projectsPageB {
     @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
-    @apply active:text-gray-400
+    @apply active:text-gray-400;
 }
 .socialsPageB {
     @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
-    @apply active:text-gray-400
+    @apply active:text-gray-400;
+}
+
+/* Lower Body */
+/* 3D Interactive Model */
+.lowerBodyIndex {
+    @apply w-full h-3/4 flex justify-around items-center;
+}
+.homePhotoUno {
+    @apply w-1/5 h-2/5 rounded-lg;
+}
+.homePhotoDos {
+    @apply w-1/5 h-2/5 rounded-lg;
+}
+.interactiveLaptop {
+    @apply w-1/2 h-3/5 rounded-md;
 }
 /*  */
