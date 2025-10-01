@@ -6,6 +6,21 @@
     <link rel="stylesheet" href="../Output/output.css">
     <script src="../Public/index.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script type="importmap" src="https://unpkg.com/three@<version>/build/three.module.js"></script>
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.7.1/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@^0.172.0/build/three.module.min.js"
+        }
+    }
+    
+    </script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-module.min.js"></script>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js"></script>
+
+
 </head>
 <body>
     
@@ -23,13 +38,24 @@
     <div class="lowerBodyIndex">
         <img class="homePhotoUno" src="../Assets/homeClubPic1.png">
         <model-viewer 
-        src="../Assets/3Dlaptop.glb"
+        src="../Assets/laptop3.glb"
         class="interactiveLaptop"
         auto-rotate
         camera-controls
         disable-zoom
+        disable-tap
         ar
+        field-of-view="50deg"
+        camera-orbit="270deg 75deg 2m"
+        min-camera-orbit="-Infinity 75deg 15m"
+        max-camera-orbit="Infinity 75deg 15m"
+        position="0m 100m 0m"
+        interaction-prompt="none"
         exposure="0.325";>
+        <effect-composer render-mode="quality" msaa="10">
+                    <bloom-effect strength="0.75" radius="0.5"></bloom-effect>
+                    <color-grade-effect></color-grade-effect>
+                  </effect-composer>
         </model-viewer>
         <img class="homePhotoDos" src="../Assets/homeClubPic2.png">    
     </div>

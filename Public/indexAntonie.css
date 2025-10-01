@@ -51,15 +51,15 @@ nav {
 /* Lower Body */
 /* 3D Interactive Model */
 .lowerBodyIndex {
-    @apply w-full h-3/4 flex justify-around items-center;
+    @apply w-full h-3/4;
 }
 .homePhotoUno {
-    @apply w-1/5 h-2/5 rounded-lg;
+    @apply aspect-auto w-1/7 rounded-lg absolute top-1/6 left-1/11;
 }
 .homePhotoDos {
-    @apply w-1/5 h-2/5 rounded-lg;
+    @apply aspect-auto w-1/7 rounded-lg absolute top-4/6 right-1/11;
 }
 .interactiveLaptop {
-    @apply w-1/2 h-3/5 rounded-md;
+    @apply lg:h-4/5 lg:w-3/5 rounded-md absolute top-1/2 left-1/2 translate-y-[-45%] translate-x-[-46%];
 }
 /*  */

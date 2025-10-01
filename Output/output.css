@@ -774,26 +774,39 @@ nav {
   }
 }
 .lowerBodyIndex {
-  display: flex;
   height: calc(3/4 * 100%);
   width: 100%;
-  align-items: center;
-  justify-content: space-around;
 }
 .homePhotoUno {
-  height: calc(2/5 * 100%);
-  width: calc(1/5 * 100%);
+  position: absolute;
+  top: calc(1/6 * 100%);
+  left: calc(1/11 * 100%);
+  aspect-ratio: auto;
+  width: calc(1/7 * 100%);
   border-radius: var(--radius-lg);
 }
 .homePhotoDos {
-  height: calc(2/5 * 100%);
-  width: calc(1/5 * 100%);
+  position: absolute;
+  top: calc(4/6 * 100%);
+  right: calc(1/11 * 100%);
+  aspect-ratio: auto;
+  width: calc(1/7 * 100%);
   border-radius: var(--radius-lg);
 }
 .interactiveLaptop {
-  height: calc(3/5 * 100%);
-  width: calc(1/2 * 100%);
+  position: absolute;
+  top: calc(1/2 * 100%);
+  left: calc(1/2 * 100%);
+  --tw-translate-x: -46%;
+  --tw-translate-y: -45%;
+  translate: var(--tw-translate-x) var(--tw-translate-y);
   border-radius: var(--radius-md);
+  @media (width >= 64rem) {
+    height: calc(4/5 * 100%);
+  }
+  @media (width >= 64rem) {
+    width: calc(3/5 * 100%);
+  }
 }
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 @layer theme, base, components, utilities;
@@ -1041,6 +1054,21 @@ nav {
   syntax: "*";
   inherits: false;
 }
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -1064,6 +1092,9 @@ nav {
       --tw-scale-y: 1;
       --tw-scale-z: 1;
       --tw-duration: initial;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
     }
   }
 }
