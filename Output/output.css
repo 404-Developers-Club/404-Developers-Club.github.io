@@ -519,6 +519,12 @@ nav {
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
 }
+.clubHeading {
+  height: calc(1/5 * 100%);
+}
+.clubHeadingPic {
+  height: calc(var(--spacing) * 10);
+}
 .navDiv {
   display: flex;
   gap: calc(var(--spacing) * 6);
@@ -782,7 +788,7 @@ nav {
   top: calc(1/6 * 100%);
   left: calc(1/11 * 100%);
   aspect-ratio: auto;
-  width: calc(1/7 * 100%);
+  width: calc(1/8 * 100%);
   border-radius: var(--radius-lg);
 }
 .homePhotoDos {
@@ -790,15 +796,15 @@ nav {
   top: calc(4/6 * 100%);
   right: calc(1/11 * 100%);
   aspect-ratio: auto;
-  width: calc(1/7 * 100%);
+  width: calc(1/8 * 100%);
   border-radius: var(--radius-lg);
 }
 .interactiveLaptop {
   position: absolute;
   top: calc(1/2 * 100%);
   left: calc(1/2 * 100%);
-  --tw-translate-x: -46%;
-  --tw-translate-y: -45%;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -40%;
   translate: var(--tw-translate-x) var(--tw-translate-y);
   border-radius: var(--radius-md);
   @media (width >= 64rem) {

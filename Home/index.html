@@ -26,7 +26,7 @@
     
     <!-- Navigation Menu -->
     <nav>
-        <h1 class="clubHeading">404 Developers</h1>
+        <button class="clubHeading" onclick="sendHome()"><img class="clubHeadingPic" src="../Assets/websiteIcon.png"></button>
         <div class="navDiv">    
             <button class="homePageB" onclick="sendHome()">Home</button>
             <button class="eventsPageB" onclick="sendEvents()">Events</button>  
@@ -38,7 +38,7 @@
     <div class="lowerBodyIndex">
         <img class="homePhotoUno" src="../Assets/homeClubPic1.png">
         <model-viewer 
-        src="../Assets/laptop3.glb"
+        src="../Assets/laptop3update.glb"
         class="interactiveLaptop"
         auto-rotate
         camera-controls
@@ -46,10 +46,11 @@
         disable-tap
         ar
         field-of-view="50deg"
+        auto-rotate-delay="3000"
         camera-orbit="270deg 75deg 2m"
-        min-camera-orbit="-Infinity 75deg 15m"
-        max-camera-orbit="Infinity 75deg 15m"
-        position="0m 100m 0m"
+        min-camera-orbit="-Infinity 75deg 18m"
+        max-camera-orbit="Infinity 75deg 18m"
+        camera-target="0m 1.5m -0"
         interaction-prompt="none"
         exposure="0.325";>
         <effect-composer render-mode="quality" msaa="10">

@@ -9,6 +9,25 @@
     --font-jersey10: "Jersey 10", sans-serif;
     --font-inter: "Inter", sans-serif;
     --font-oxanium: "Oxanium", sans-serif;
+
+    --animate-laptopToggle: laptopToggle 64s linear 3s infinite;
+    @keyframes laptopToggle {
+        0% {
+            top:50%;
+            left: 50%;
+            transform: translate(0, 0%)
+        }
+        50% {
+            top:50%;
+            left: 50%;
+            transform: translate(-10%, 0%)
+        }
+        100% {
+            top:50%;
+            left: 50%;
+            transform: translate(0%, 0%)
+        }
+    }
 }
 
 
@@ -23,6 +42,12 @@ body {
 nav {
     @apply flex justify-between items-center px-6 py-4 top-0 w-full shadow-md right-2;
     @apply text-[white] sm:text-base md:text-lg lg:text-xl font-oxanium;
+}
+.clubHeading {
+    @apply h-1/5
+}
+.clubHeadingPic {
+    @apply h-10
 }
 .navDiv {
     @apply flex gap-6;
@@ -54,12 +79,12 @@ nav {
     @apply w-full h-3/4;
 }
 .homePhotoUno {
-    @apply aspect-auto w-1/7 rounded-lg absolute top-1/6 left-1/11;
+    @apply aspect-auto w-1/8 rounded-lg absolute top-1/6 left-1/11;
 }
 .homePhotoDos {
-    @apply aspect-auto w-1/7 rounded-lg absolute top-4/6 right-1/11;
+    @apply aspect-auto w-1/8 rounded-lg absolute top-4/6 right-1/11;
 }
 .interactiveLaptop {
-    @apply lg:h-4/5 lg:w-3/5 rounded-md absolute top-1/2 left-1/2 translate-y-[-45%] translate-x-[-46%];
+    @apply lg:h-4/5 lg:w-3/5 rounded-md absolute top-1/2 left-1/2 translate-y-[-40%] translate-x-[-50%];
 }
 /*  */
