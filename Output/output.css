@@ -12,6 +12,7 @@
       "Courier New", monospace;
     --color-green-400: oklch(79.2% 0.209 151.711);
     --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-white: #fff;
     --spacing: 0.25rem;
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
@@ -19,6 +20,10 @@
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
     --default-transition-duration: 150ms;
@@ -26,6 +31,8 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-oxanium: "Oxanium", sans-serif;
+    --animate-pictureBobbing: pictureBobbing 3s linear 0s infinite;
+    --animate-typing: typing 3s steps(40, end);
   }
 }
 @layer base {
@@ -180,6 +187,9 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .text-center {
+    text-align: center;
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
@@ -783,25 +793,134 @@ nav {
   height: calc(3/4 * 100%);
   width: 100%;
 }
-.homePhotoUno {
-  position: absolute;
-  top: calc(1/6 * 100%);
-  left: calc(1/11 * 100%);
+.homePhoto {
+  pointer-events: none;
   aspect-ratio: auto;
-  width: calc(1/8 * 100%);
+  width: 100%;
   border-radius: var(--radius-lg);
 }
-.homePhotoDos {
+.containerPic1 {
   position: absolute;
-  top: calc(4/6 * 100%);
-  right: calc(1/11 * 100%);
-  aspect-ratio: auto;
-  width: calc(1/8 * 100%);
-  border-radius: var(--radius-lg);
+  top: calc(2/8 * 100%);
+  left: calc(1/9 * 100%);
+  width: calc(1/7 * 100%);
+  animation: var(--animate-pictureBobbing);
+  overflow: hidden;
+  &:is(:where(.group):hover *) {
+    @media (hover: hover) {
+      --tw-shadow: 0 0 #0000;
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  &::after {
+    content: var(--tw-content);
+    pointer-events: none;
+  }
+  &::after {
+    content: var(--tw-content);
+    position: absolute;
+  }
+  &::after {
+    content: var(--tw-content);
+    top: calc(var(--spacing) * 0);
+  }
+  &::after {
+    content: var(--tw-content);
+    left: calc(var(--spacing) * 0);
+  }
+  &::after {
+    content: var(--tw-content);
+    display: flex;
+  }
+  &::after {
+    content: var(--tw-content);
+    height: 100%;
+  }
+  &::after {
+    content: var(--tw-content);
+    width: 100%;
+  }
+  &::after {
+    content: var(--tw-content);
+    align-items: center;
+  }
+  &::after {
+    content: var(--tw-content);
+    justify-content: center;
+  }
+  &::after {
+    content: var(--tw-content);
+    background-color: rgba(0,0,0,0.5);
+  }
+  &::after {
+    content: var(--tw-content);
+    text-align: center;
+  }
+  &::after {
+    content: var(--tw-content);
+    font-family: var(--font-oxanium);
+  }
+  &::after {
+    content: var(--tw-content);
+    color: var(--color-white);
+  }
+  &::after {
+    content: var(--tw-content);
+    opacity: 0%;
+  }
+  &::after {
+    content: var(--tw-content);
+    transition-property: opacity;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  &::after {
+    content: var(--tw-content);
+    --tw-duration: 150ms;
+    transition-duration: 150ms;
+  }
+  &::after {
+    --tw-content: 'Lessons';
+    content: var(--tw-content);
+  }
+  &:hover {
+    @media (hover: hover) {
+      &::after {
+        content: var(--tw-content);
+        opacity: 100%;
+      }
+    }
+  }
+  &::after {
+    content: var(--tw-content);
+    @media (width >= 64rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+}
+.containerPic2 {
+  position: absolute;
+  top: calc(5/8 * 100%);
+  right: calc(1/9 * 100%);
+  width: calc(1/7 * 100%);
+  animation: var(--animate-pictureBobbing);
+  overflow: hidden;
+}
+.insetBorder {
+  pointer-events: none;
+  position: absolute;
+  inset: calc(var(--spacing) * 0);
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  --tw-inset-shadow: inset 0 0 20px 20px var(--tw-inset-shadow-color, rgba(0, 0, 0, 1));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
 }
 .interactiveLaptop {
   position: absolute;
-  top: calc(1/2 * 100%);
+  top: calc(9/16 * 100%);
   left: calc(1/2 * 100%);
   --tw-translate-x: -50%;
   --tw-translate-y: -40%;
@@ -815,6 +934,8 @@ nav {
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
 @layer theme, base, components, utilities;
 @layer theme;
 @layer base {
@@ -966,6 +1087,31 @@ nav {
   }
 }
 @layer utilities;
+h1 {
+  text-align: center;
+  font-family: var(--font-oxanium);
+  color: var(--color-white);
+  @media (width >= 64rem) {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+}
+.tagLine {
+  display: inline-block;
+  width: auto;
+  animation: var(--animate-typing);
+  overflow: hidden;
+  white-space: nowrap;
+}
+h2 {
+  text-align: center;
+  font-family: var(--font-oxanium);
+  color: var(--color-white);
+  @media (width >= 64rem) {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -1074,6 +1220,25 @@ nav {
   syntax: "*";
   inherits: false;
   initial-value: 0;
+}
+@keyframes pictureBobbing {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -5%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {

@@ -10,7 +10,9 @@
     --font-inter: "Inter", sans-serif;
     --font-oxanium: "Oxanium", sans-serif;
 
+    --inset-shadow-md: inset 0 0 20px 20px rgba(0, 0, 0, 1);
     --animate-laptopToggle: laptopToggle 64s linear 3s infinite;
+    --animate-pictureBobbing: pictureBobbing 3s linear 0s infinite;
     @keyframes laptopToggle {
         0% {
             top:50%;
@@ -26,6 +28,18 @@
             top:50%;
             left: 50%;
             transform: translate(0%, 0%)
+        }
+    }
+
+    @keyframes pictureBobbing {
+        0%{
+            transform: translate(0, 0)
+        }
+        50% {
+            transform: translate(0, -5%)
+        }
+        100% {
+            transform: translate(0, 0)
         }
     }
 }
@@ -78,13 +92,23 @@ nav {
 .lowerBodyIndex {
     @apply w-full h-3/4;
 }
-.homePhotoUno {
-    @apply aspect-auto w-1/8 rounded-lg absolute top-1/6 left-1/11;
+
+.homePhoto {
+    @apply aspect-auto w-full rounded-lg pointer-events-none;
 }
-.homePhotoDos {
-    @apply aspect-auto w-1/8 rounded-lg absolute top-4/6 right-1/11;
+
+.containerPic1 {
+    @apply w-1/7 absolute top-2/8 left-1/10 overflow-hidden animate-pictureBobbing after:content-['Lessons'] after:absolute after:top-0 after:left-0 after:flex after:w-full after:h-full after:pointer-events-none after:opacity-0 after:bg-[rgba(0,0,0,0.5)] after:transition-opacity after:duration-150 after:text-white after:font-oxanium after:lg:text-xl after:text-center hover:after:opacity-100 after:items-center after:justify-center group-hover:shadow-none
+}
+.containerPic2 {
+    @apply w-1/7 absolute top-5/8 right-1/10 overflow-hidden animate-pictureBobbing 
+}
+
+.insetBorder {
+    @apply w-full h-full z-10 absolute inset-0 inset-shadow-md overflow-hidden pointer-events-none
+
 }
 .interactiveLaptop {
-    @apply lg:h-4/5 lg:w-3/5 rounded-md absolute top-1/2 left-1/2 translate-y-[-40%] translate-x-[-50%];
+    @apply lg:h-4/5 lg:w-3/5 rounded-md absolute top-9/16 left-1/2 translate-y-[-40%] translate-x-[-50%];
 }
 /*  */

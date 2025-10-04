@@ -1,8 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
 @import "tailwindcss";
 
 @theme {
     /* Nav Button Font */
     --font-jersey10: "Jersey 10", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --font-oxanium: "Oxanium", sans-serif;
+
+    --animate-typing: typing 3s steps(40, end);
+    
+    @keyframes typing
+    {
+        from { width: 0 }
+        to { width: 100%}
+    }
 }
 
+h1 {
+    @apply text-white font-oxanium text-center 
+}
+
+.tagLine {
+    @apply w-auto animate-typing whitespace-nowrap overflow-hidden inline-block lg:text-4x1
+}
+
+h2 {
+    @apply text-white font-oxanium text-center lg:text-3xl
+}
