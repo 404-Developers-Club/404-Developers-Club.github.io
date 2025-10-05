@@ -1,6 +1,6 @@
 // NAVIGATION MENU BUTTONS
 function sendHome() {
-    location.href = "../Home/index.html";
+    location.href = "../index.html";
 }
 
 function sendEvents() {

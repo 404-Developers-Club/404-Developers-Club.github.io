@@ -46,7 +46,7 @@
 
 
 
-/* GLOBAL CLASSES */
+/* START OF GLOBAL CLASSES */
 /* Body */
 body {
     @apply bg-[#070709];
@@ -58,10 +58,10 @@ nav {
     @apply text-[white] sm:text-base md:text-lg lg:text-xl font-oxanium;
 }
 .clubHeading {
-    @apply h-1/5
+    @apply h-1/5;
 }
 .clubHeadingPic {
-    @apply h-10
+    @apply h-10;
 }
 .navDiv {
     @apply flex gap-6;
@@ -86,29 +86,26 @@ nav {
     @apply after:content-[''] after:block after:w-full after:h-[2px] after:bg-green-400 after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100;
     @apply active:text-gray-400;
 }
+/* END OF GLOBAL CLASSES */
 
+
+
+/* START OF INDEX PAGE */
 /* Lower Body */
 /* 3D Interactive Model */
 .lowerBodyIndex {
     @apply w-full h-3/4;
 }
-
-.homePhoto {
-    @apply aspect-auto w-full rounded-lg pointer-events-none;
-}
-
-.containerPic1 {
-    @apply w-1/7 absolute top-2/8 left-1/10 overflow-hidden animate-pictureBobbing after:content-['Lessons'] after:absolute after:top-0 after:left-0 after:flex after:w-full after:h-full after:pointer-events-none after:opacity-0 after:bg-[rgba(0,0,0,0.5)] after:transition-opacity after:duration-150 after:text-white after:font-oxanium after:lg:text-xl after:text-center hover:after:opacity-100 after:items-center after:justify-center group-hover:shadow-none
-}
-.containerPic2 {
-    @apply w-1/7 absolute top-5/8 right-1/10 overflow-hidden animate-pictureBobbing 
-}
-
 .insetBorder {
-    @apply w-full h-full z-10 absolute inset-0 inset-shadow-md overflow-hidden pointer-events-none
+    @apply w-full h-full z-10 absolute inset-0 inset-shadow-md overflow-hidden pointer-events-none;
 
 }
 .interactiveLaptop {
     @apply lg:h-4/5 lg:w-3/5 rounded-md absolute top-9/16 left-1/2 translate-y-[-40%] translate-x-[-50%];
 }
-/*  */
+/* END OF INDEX PAGE */
+
+
+
+/* START OF EVENTS  */
+/* Calendar */

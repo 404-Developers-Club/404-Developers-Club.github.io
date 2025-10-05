@@ -19,13 +19,25 @@
 }
 
 h1 {
-    @apply text-white font-oxanium text-center 
+    @apply text-white font-oxanium text-center ;
 }
 
 .tagLine {
-    @apply w-auto animate-typing whitespace-nowrap overflow-hidden inline-block lg:text-4x1
+    @apply w-auto animate-typing whitespace-nowrap overflow-hidden inline-block lg:text-3xl;
 }
 
 h2 {
-    @apply text-white font-oxanium text-center lg:text-3xl
+    @apply text-white font-oxanium text-center lg:text-3xl;
+}
+
+/* Index Page */
+.homePhoto {
+    @apply aspect-auto w-full rounded-lg pointer-events-none;
+}
+
+.containerPic1 {
+    @apply w-1/7 absolute top-2/8 left-1/10 overflow-hidden animate-pictureBobbing after:content-['Lessons'] after:absolute after:top-0 after:left-0 after:flex after:w-full after:h-full after:pointer-events-none after:opacity-0 after:bg-[rgba(0,0,0,0.5)] after:transition-opacity after:duration-150 after:text-white after:font-oxanium after:lg:text-xl after:text-center hover:after:opacity-100 after:items-center after:justify-center group-hover:shadow-none;
+}
+.containerPic2 {
+    @apply w-1/7 absolute top-5/8 right-1/10 overflow-hidden animate-pictureBobbing;
 }
