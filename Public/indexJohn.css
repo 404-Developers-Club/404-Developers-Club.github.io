@@ -41,3 +41,13 @@ h2 {
 .containerPic2 {
     @apply w-1/7 absolute top-5/8 right-1/10 overflow-hidden animate-pictureBobbing;
 }
+.lowerBodyIndex {
+    @apply w-full h-3/4;
+}
+.insetBorder {
+    @apply w-full h-full z-10 absolute inset-0 inset-shadow-md overflow-hidden pointer-events-none;
+
+}
+.interactiveLaptop {
+    @apply lg:h-4/5 lg:w-3/5 rounded-md absolute top-9/16 left-1/2 translate-y-[-40%] translate-x-[-50%];
+}
