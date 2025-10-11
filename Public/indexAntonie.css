@@ -10,7 +10,9 @@
     --font-inter: "Inter", sans-serif;
     --font-oxanium: "Oxanium", sans-serif;
 
+    
     --animate-laptopToggle: laptopToggle 64s linear 3s infinite;
+    
     @keyframes laptopToggle {
         0% {
             top:50%;
@@ -28,6 +30,8 @@
             transform: translate(0%, 0%)
         }
     }
+
+    
 }
 
 

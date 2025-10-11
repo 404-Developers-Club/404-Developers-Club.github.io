@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <!-- Home Page -->
     <meta charset="UTF-8">
@@ -16,61 +17,59 @@
     }
     
     </script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-module.min.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-module.min.js"></script>
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js"></script>
-
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js"></script>
+    <script src="Public/indexJohn.js"></script>
 
 </head>
+
 <body>
-    
+
     <!-- Navigation Menu -->
     <nav>
-        <button class="clubHeading" onclick="sendHome()"><img class="clubHeadingPic" src="../Assets/websiteIcon.png"></button>
-        <div class="navDiv">    
+        <button class="clubHeading" onclick="sendHome()"><img class="clubHeadingPic"
+                src="../Assets/websiteIcon.png"></button>
+        <div class="navDiv">
             <button class="homePageB" onclick="sendHome()">Home</button>
-            <button class="eventsPageB" onclick="sendEvents()">Events</button>  
+            <button class="eventsPageB" onclick="sendEvents()">Events</button>
             <button class="lessonsPageB" onclick="sendLessons()">Lessons</button>
             <button class="projectsPageB" onclick="sendProjects()">Projects</button>
             <button class="socialsPageB" onclick="sendSocials()">Socials</button>
         </div>
     </nav>
     <div class="lowerBodyIndex">
-        <div class="containerPic1">
-            <div class="insetBorder"></div>
-            <button>
-                <img class="homePhoto" src="Assets/template.png">
-            </button>
-            
+        <div class="text-center">
+            <h1 class="tagLine"></h1>
         </div>
-        <div class="text-center"><h1 class="tagLine">RHS's Only Coding Club</h1></div>
-        <model-viewer 
-        src="../Assets/laptop3update.glb"
-        class="interactiveLaptop"
-        auto-rotate
-        camera-controls
-        disable-zoom
-        disable-tap
-        field-of-view="50deg"
-        auto-rotate-delay="3000"
-        camera-orbit="270deg 75deg 2m"
-        min-camera-orbit="-Infinity 75deg 18m"
-        max-camera-orbit="Infinity 75deg 18m"
-        camera-target="0m 1.5m -0"
-        interaction-prompt="none"
-        exposure="0.325";>
-        <effect-composer render-mode="quality" msaa="10">
-                    <bloom-effect strength="0.75" radius="0.5"></bloom-effect>
-                    <color-grade-effect></color-grade-effect>
-                  </effect-composer>
-        </model-viewer>
-        <div class="containerPic2">
-            <div class="insetBorder"></div>
-            <button>
-                <img class="homePhoto" src="Assets/template.png">    
-            </button>
-        </div>
+        <model-viewer src="../Assets/laptop3update.glb" class="interactiveLaptop" auto-rotate camera-controls
+            disable-zoom disable-tap loading="lazy" field-of-view="50deg" auto-rotate-delay="3000"
+            camera-orbit="270deg 75deg 2m" min-camera-orbit="-Infinity 75deg 18m" max-camera-orbit="Infinity 75deg 18m"
+            camera-target="0m 1.5m -0" interaction-prompt="none" exposure="0.325" ;>
+            <effect-composer render-mode="quality" msaa="10">
+                <bloom-effect strength="0.75" radius="0.5"></bloom-effect>
+                <color-grade-effect></color-grade-effect>
+            </effect-composer>
+            <div class="question"></div>
+            <div class="containerPic1">
+                <div class="insetBorder"></div>
+                <button>
+                    <img class="homePhoto" src="Assets/template.png">
+                </button>
+
+            </div>
+            <div class="containerPic2">
+                <div class="insetBorder"></div>
+                <button>
+                    <img class="homePhoto" src="Assets/template.png">
+                </button>
+            </div>
     </div>
-    
+    </model-viewer>
+
+
 </body>
+
 </html>
