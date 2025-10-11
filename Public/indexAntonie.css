@@ -39,6 +39,7 @@
 /* START OF GLOBAL CLASSES */
 /* Body */
 body {
+    /* REMOVE OVERFLOW-HIDDEN AFTER */
     @apply bg-[#070709];
 }
 
@@ -80,22 +81,42 @@ nav {
 
 
 /* START OF EVENTS  */
+/* Everything below the nav bar */
 .eventsLowerDiv {
     @apply w-full h-full grid grid-rows-2 gap-7;
 }
+/* Upper Half of the Bottom Content: Events Calendar and List */
 .eventsCalendarContainer {
     @apply w-full h-full flex flex-wrap flex-row justify-evenly row-span-1;
 }
-.eventsCalendarDiv {
-    @apply w-[50vw] h-full;
-    @apply rounded-2xl;
-}
 .eventsCalendar {
-    @apply w-full h-full rounded-2xl; 
+    @apply w-[40vw] h-full rounded-2xl; 
 }
+/* Events List Div */
 .eventsUpcomingListD {
-    @apply bg-white w-[40vw] h-full;
+    @apply grid grid-rows-4 bg-white w-[40vw] h-full gap-5 rounded-2xl;
 }
+/* Events 1-4 Div Container */
+.eventsNCont {
+    @apply w-full h-full grid grid-cols-10 row-span-1 font-oxanium;
+}
+.eNDate {
+    @apply w-full h-full grid grid-rows-10 col-span-4;
+}
+.eNDateH {
+    @apply text-black row-span-2 row-end-4 lg:text-3xl;
+}
+.eNDContainer {
+    @apply w-full h-full grid grid-rows-10 col-span-6;
+}
+.eNDescription {
+    @apply row-span-2 row-end-4;
+}
+/* Lower Half of the Bottom Content: Club Images */
 .eventsImageContainer {
-    @apply w-full h-full row-span-1 bg-amber-500;
+    @apply w-full h-full flex justify-center row-span-1;
 }
+.eventsIMG {
+    @apply w-[25%] h-[75%] rounded-2xl mt-10;
+}
+/* END OF EVENTS *
