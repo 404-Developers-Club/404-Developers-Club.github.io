@@ -10,9 +10,9 @@
     --font-inter: "Inter", sans-serif;
     --font-oxanium: "Oxanium", sans-serif;
 
-    --inset-shadow-md: inset 0 0 20px 20px rgba(0, 0, 0, 1);
+    
     --animate-laptopToggle: laptopToggle 64s linear 3s infinite;
-    --animate-pictureBobbing: pictureBobbing 3s linear 0s infinite;
+    
     @keyframes laptopToggle {
         0% {
             top:50%;
@@ -31,17 +31,7 @@
         }
     }
 
-    @keyframes pictureBobbing {
-        0%{
-            transform: translate(0, 0)
-        }
-        50% {
-            transform: translate(0, -5%)
-        }
-        100% {
-            transform: translate(0, 0)
-        }
-    }
+    
 }
 
 
