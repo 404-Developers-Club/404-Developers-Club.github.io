@@ -22,7 +22,8 @@ function sendSocials() {
 // EVENTS PAGE
 // EVENTS LIST CALENDAR 
 const calendarID = '0dfbf6b0715c5734ab533ca72efe09ed708db9a7fe319feb7757fd83101f90f0@group.calendar.google.com';
-const calApiKey = 'AIzaSyAPfk300mnQ9MVT-F8CnPYLz_sAp6Id6Ms'
+// Restricted API Key
+const calApiKey = 'AIzaSyAL5q5fZySNscKk1gkgdxt6amoP4JKmYGQ'
 const eventContainers = document.querySelectorAll('.eventsNCont');
 
 async function loadEvents() {
