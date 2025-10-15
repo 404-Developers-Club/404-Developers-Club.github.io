@@ -44,14 +44,17 @@
         <div class="text-center">
             <h1 class="tagLine"></h1>
         </div>
-        <model-viewer src="../Assets/laptop3update.glb" class="interactiveLaptop" auto-rotate camera-controls
-            disable-zoom disable-tap loading="lazy" field-of-view="50deg" auto-rotate-delay="3000"
-            camera-orbit="270deg 75deg 2m" min-camera-orbit="-Infinity 75deg 18m" max-camera-orbit="Infinity 75deg 18m"
-            camera-target="0m 1.5m -0" interaction-prompt="none" exposure="0.325" ;>
-            <effect-composer render-mode="quality" msaa="10">
-                <bloom-effect strength="0.75" radius="0.5"></bloom-effect>
-                <color-grade-effect></color-grade-effect>
-            </effect-composer>
+        <div class="modelButtonContainer">
+            <model-viewer src="../Assets/laptop3update.glb" class="interactiveLaptop" auto-rotate camera-controls
+                disable-zoom disable-tap loading="lazy" field-of-view="50deg" auto-rotate-delay="3000"
+                camera-orbit="270deg 75deg 2m" min-camera-orbit="-Infinity 75deg 18m"
+                max-camera-orbit="Infinity 75deg 18m" camera-target="0m 1.5m -0" interaction-prompt="none"
+                exposure="0.325" ;>
+                <effect-composer render-mode="quality" msaa="10">
+                    <bloom-effect strength="0.75" radius="0.5"></bloom-effect>
+                    <color-grade-effect></color-grade-effect>
+                </effect-composer>
+            </model-viewer>
             <div class="question"></div>
             <div class="containerPic1">
                 <div class="insetBorder"></div>
@@ -66,8 +69,11 @@
                     <img class="homePhoto" src="Assets/template.png">
                 </button>
             </div>
+        </div>
+
+
     </div>
-    </model-viewer>
+
 
 
 </body>
